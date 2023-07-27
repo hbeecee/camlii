@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(237, 231, 231);
+            font-family: 'Roboto', sans-serif;
+        }
+        p{
+            margin-top: 15%;
+            text-align: center;
+            font-size: 30px;
+        }
+        .giv{
+            height: 20px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .loading{
+            display: flex;
+            justify-content: center;
+        }
+        .loading::after{
+            content: "";
+            width: 60px;
+            height: 60px;
+            border: 10px solid rgb(237, 231, 231);
+            border-radius: 50%;
+            border-top-color: rgb(168, 169, 173);
+            animation: loading 1.5s ease infinite;
+
+        }
+        @keyframes loading {
+            to{
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Camlii Co Inc Coming Soon!</p>
+    <!-- <div class="giv">
+        <img class="gif" src="Circles-menu-3.gif" alt="">
+    </div> -->
+    <div class="loading"></div>
+
+</body>
+</html>
